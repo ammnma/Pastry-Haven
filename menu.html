@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styling */
+    body {
+      margin: 0; /* Removes default browser margin */
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Navbar Styling */
+    header {
+      display: flex; /* Aligns items horizontally */
+      justify-content: space-between; /* Spaces elements evenly */
+      align-items: center; /* Vertically aligns items */
+      padding: 20px 50px; /* Adds padding around the navbar */
+    }
+
+    header h1 {
+      font-size: 2rem; /* Increases font size for the site name */
+      margin: 0; /* Removes default margin */
+    }
+
+    nav a {
+      margin: 0 20px; /* Adds spacing between navbar links */
+      text-decoration: none; /* Removes underlines from links */
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2rem;
+      position: relative; /* Allows styling effects like hover */
+      padding: 10px 15px; /* Adds padding around links */
+      transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover transitions */
+    }
+
+    nav a:hover {
+      color: #fff; /* Changes text color on hover */
+      background-color: #966e47; /* Adds a brown background on hover */
+      border-radius: 20px; /* Rounds the corners of the hover effect */
+    }
+
+    /* Menu Section */
+    .menu-section {
+      text-align: center; /* Centers all text in this section */
+      background-color: #d8c4aa; /* Background color for menu section */
+      padding: 40px 20px; /* Adds padding to the section */
+    }
+
+    .menu-title {
+      font-family: 'Poppins', sans-serif; /* Sets the font for the menu title */
+      font-size: 48px; /* Large font size for the title */
+      font-weight: bold; /* Makes title bold */
+      margin-bottom: 40px; /* Adds spacing below the title */
+    }
+
+    .menu-items {
+      display: flex; /* Aligns menu items horizontally */
+      justify-content: center; /* Centers the items */
+      gap: 80px; /* Adds spacing between menu items */
+      flex-wrap: wrap; /* Wraps items to the next line on smaller screens */
+    }
+
+    .menu-item {
+      text-align: center; /* Centers the content of each menu item */
+      width: 200px; /* Sets a fixed width for each menu item */
+    }
+
+    /* Individual Classes for Menu Item Images */
+    .donut img {
+      width: 130px; /* Specific width for donuts image */
+      height: 300px; /* Specific height for donuts image */
+      border-radius: 0px; /* Rounds the corners */
+    }
+
+    .pastry img {
+      width: 250px; /* Specific width for pastries image */
+      height: 300px; /* Specific height for pastries image */
+      border-radius: 0px; /* Rounds the corners */
+    }
+
+    .cake img {
+      width: 170px; /* Specific width for cakes image */
+      height: 300px; /* Specific height for cakes image */
+      border-radius: 20px; /* Rounds the corners */
+    }
+
+    .beverages img {
+      width: 200px; /* Specific width for beverages image */
+      height: 300px; /* Specific height for beverages image */
+      border-radius: 0px; /* Rounds the corners */
+    }
+
+    .menu-item h3 {  /* h3 for menu item heading*/
+      font-family: 'Poppins', sans-serif; /* Font for item names */
+      font-size: 20px; /* Font size for item names */
+      margin-top: 15px; /* Adds spacing above the names */
+    }
+
+    .menu-item p { /* p for descrpition */
+      font-family: 'Poppins', sans-serif; /* Font for item descriptions */
+      font-size: 16px; /* Font size for item descriptions */
+      color: #444; /* Darker text for better readability */
+      margin-top: 10px; /* Adds spacing above the descriptions */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Pastry Haven</h1> <!-- Website name -->
+    <nav>
+      <a href="index.html">Home</a> <!-- Link to the homepage -->
+      <a href="about.html">About</a> <!-- Link to the about page -->
+      <a href="menu.html">Menu</a> <!-- Link to the menu page -->
+      <a href="contact.html">Contact</a> <!-- Link to the contact page -->
+    </nav>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h1 class="menu-title">OUR MENU</h1> <!-- Section title -->
+    <div class="menu-items">
+      <!-- Donuts -->
+      <div class="menu-item donut">
+        <img src="donut.png" alt="Donuts"> <!-- Donut image -->
+        <h3>Donuts</h3> <!-- Donut name -->
+        <p>Dive into a dozen flavors of pure bliss.</p> <!-- Donut tagline -->
+      </div>
+      <!-- Pastries -->
+      <div class="menu-item pastry">
+        <img src="pastry.png" alt="Pastries"> <!-- Pastry image -->
+        <h3>Pastries</h3> <!-- Pastry name -->
+        <p>Discover a flaky treasure trove of sweet and savory delights.</p> <!-- Pastry tagline -->
+      </div>
+      <!-- Cakes -->
+      <div class="menu-item cake">
+        <img src="cake.png" alt="Cakes"> <!-- Cake image -->
+        <h3>Cakes</h3> <!-- Cake name -->
+        <p>Every cake tells a story; choose yours today.</p> <!-- Cake tagline -->
+      </div>
+      <!-- Beverages -->
+      <div class="menu-item beverages">
+        <img src="beverages.png" alt="Beverages"> <!-- Beverages image -->
+        <h3>Beverages</h3> <!-- Beverages name -->
+        <p>Refresh your moments with every sip of perfection.</p> <!-- Beverages tagline -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+

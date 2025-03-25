@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Pastry Haven</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #dfdbcb;
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar Styling */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #faf8f5;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-size: 18px;
+      padding: 10px 15px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+      background-color: #966e47;
+      border-radius: 5px;
+    }
+
+    .nav-links a.active {
+      background-color: #966e47;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #d8c4aa;
+      flex-grow: 1;
+    }
+
+    .contact-title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #966e47;
+      border-radius: 20px;
+      color: #fff;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(26, 14, 14, 0.2);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    .contact-item i {
+      color: #f8e8d6;
+      font-size: 20px;
+    }
+
+    /* Feedback Form */
+    .feedback-form {
+      max-width: 500px;
+      margin: 30px auto 0;
+      background-color: #faf8f5;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .feedback-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .feedback-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #966e47;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .feedback-form button:hover {
+      background-color: #7a5736;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Pastry Haven</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1 class="contact-title">Contact Us</h1>
+    <p class="contact-subtitle">For more info or to leave feedback</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        +123-456-7890
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        hello@pastryhaven.com
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        123 Anywhere St., Any City
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-globe"></i>
+        www.pastryhaven.com
+      </div>
+    </div>
+
+    <!-- Feedback Form -->
+    <div class="feedback-form">
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Feedback" required></textarea>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
